@@ -1,0 +1,310 @@
+{
+	"info": {
+		"name": "Java Brains RESTful Tutorial",
+		"_postman_id": "ce826abb-1957-c968-9252-573e68f6647b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/messenger/webapi/messages/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n    {\n        \"author\": \"cassie\",\n        \"created\": \"2018-01-16T23:07:40.989Z[UTC]\",\n        \"message\": \"FluffyButt\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/messenger/webapi/messages/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"messenger",
+						"webapi",
+						"messages",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/messenger/webapi/messages/3",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n    {\n        \"author\": \"cassie\",\n        \"created\": \"2018-01-16T23:07:40.989Z[UTC]\",\n        \"message\": \"FluffyButt1\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/messenger/webapi/messages/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"messenger",
+						"webapi",
+						"messages",
+						"3"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/messenger/webapi/injectdemo/context",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authSessionID",
+						"value": "GoatsAreLuv"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/messenger/webapi/injectdemo/context",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"messenger",
+						"webapi",
+						"injectdemo",
+						"context"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/messenger/webapi/messages/?start=0&size=2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/messenger/webapi/messages/?start=0&size=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"messenger",
+						"webapi",
+						"messages",
+						""
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "2"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/messenger/webapi/messages/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/messenger/webapi/messages/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"messenger",
+						"webapi",
+						"messages",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/messenger/webapi/messages/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n "
+				},
+				"url": {
+					"raw": "http://localhost:8080/messenger/webapi/messages/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"messenger",
+						"webapi",
+						"messages",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/messenger/webapi/messages/3",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n    {\n        \"author\": \"cassie\",\n        \"created\": \"2018-01-16T23:07:40.989Z[UTC]\",\n        \"message\": \"FluffyButt1\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/messenger/webapi/messages/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"messenger",
+						"webapi",
+						"messages",
+						"3"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/messenger/webapi/messages/3",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n "
+				},
+				"url": {
+					"raw": "http://localhost:8080/messenger/webapi/messages/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"messenger",
+						"webapi",
+						"messages",
+						"3"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/messenger/webapi/injectdemo/annotations;param=HelloWorld",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authSessionID",
+						"value": "GoatsAreLuv"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/messenger/webapi/injectdemo/annotations;param=HelloWorld",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"messenger",
+						"webapi",
+						"injectdemo",
+						"annotations;param=HelloWorld"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/messenger/webapi/injectdemo/context",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authSessionID",
+						"value": "GoatsAreLuv"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/messenger/webapi/injectdemo/context",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"messenger",
+						"webapi",
+						"injectdemo",
+						"context"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
